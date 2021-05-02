@@ -158,7 +158,7 @@ Try experimenting by adding more routes and controller actions, and see what
 other responses you can set up by changing how you are accessing data from the
 database (like using the `.order` or `.limit` methods from Active Record).
 
-## Summary
+## Conclusion
 
 In summary, you should now have a firm understanding of how to implement basic routing in your application for static pages. As a review, the process is below:
 
