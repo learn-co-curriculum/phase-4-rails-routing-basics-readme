@@ -141,6 +141,14 @@ To see how to return a response with this cheese data, you can also run:
 render json: cheeses
 ```
 
+Calling the `render` method with the `json:` option will produce a
+JSON-formatted string data which the controller can then use as the body of the
+response being sent back to the client. If we pass an Active Record object to
+this render method, it will be _serialized_ as JSON data based on the attributes
+of the object.
+
+To exit `byebug` gracefully, type `continue` or `c` and hit enter.
+
 Now that we've seen how that code will run in `byebug`, let's add it to the
 controller action:
 
