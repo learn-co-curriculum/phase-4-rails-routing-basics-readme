@@ -178,5 +178,4 @@ In summary, you should now have a firm understanding of how to implement basic r
 
 ## Resources
 
-- [link 1](example.com)
-- [link 2](example.com)
+- [Rails Routing](https://guides.rubyonrails.org/routing.html)
