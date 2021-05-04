@@ -18,6 +18,10 @@ rails db:migrate db:seed
 
 This will download all the dependencies for our app and set up the database.
 
+## Video Walkthrough
+
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/ebA14bJAT88?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 ## Routing
 
 How does your application know what code to run when it receives a request? This
