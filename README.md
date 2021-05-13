@@ -129,7 +129,7 @@ end
 Visit [`http://localhost:3000/cheeses`](http://localhost:3000/cheeses) in the
 browser again, and check your terminal: you should be in the `byebug` session
 now! That means you have access to everything that's available inside our
-controller and can try out code to get this latest test passing.
+controller and can try out the code we need to return our list of cheeses.
 
 From your `byebug` session, run:
 
