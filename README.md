@@ -35,9 +35,9 @@ attempts to go to a page on a Rails application:
    in a browser; a JavaScript application using `fetch`; etc)
 2. That request is sent to the server where the application's router interprets
    the request and sends a message to the controller mapped to that route
-3. The controller communicates uses the model to access data from the database
+3. The controller uses the model to access data from the database
 4. The controller then uses that data to render a view (HTML or JSON)
-5. The server returns a HTTP response, which contains the HTML or JSON data
+5. The server returns an HTTP response, which contains the HTML or JSON data
 
 ## Creating a Route
 
@@ -77,7 +77,7 @@ complaining about not having a route; it should now say:
 Let's fix this by creating a new controller for our cheeses. You can generate a controller using a Rails generator, just like with a model:
 
 ```sh
-rails g controller Cheeses
+rails g controller Cheeses --no-test-framework
 ```
 
 Notice the naming convention we're following: for a `Cheese` model, we need a
@@ -127,9 +127,9 @@ end
 > functions similarly to `binding.pry`.
 
 Visit [`http://localhost:3000/cheeses`](http://localhost:3000/cheeses) in the
-browser again, and check your terminal: you should be in the `byebug` session now!
-That means you can run any code that you'd be able to add inside this method, and
-see what you have access.
+browser again, and check your terminal: you should be in the `byebug` session
+now! That means you have access to everything that's available inside our
+controller and can try out code to get this latest test passing.
 
 From your `byebug` session, run:
 
@@ -137,7 +137,8 @@ From your `byebug` session, run:
 cheeses = Cheese.all
 ```
 
-This will create a new `cheeses` variable with all the cheese data from the database!
+This will create a new `cheeses` variable with all the cheese data from the
+database!
 
 To see how to return a response with this cheese data, you can also run:
 
@@ -146,10 +147,10 @@ render json: cheeses
 ```
 
 Calling the `render` method with the `json:` option will produce a
-JSON-formatted string data which the controller can then use as the body of the
-response being sent back to the client. If we pass an Active Record object to
-this render method, it will be _serialized_ as JSON data based on the attributes
-of the object.
+JSON-formatted string of data which the controller can then use as the body of
+the response being sent back to the client. If we pass an Active Record object
+(in this case, our `cheeses` variable) to this render method, it will be
+_serialized_ as JSON data based on the attributes of the object.
 
 To exit `byebug` gracefully, type `continue` or `c` and hit enter.
 
@@ -177,8 +178,8 @@ In summary, you should now have a firm understanding of how to implement basic r
 1. The server receives an HTTP request from the client
 2. The application processes the request through the `routes.rb` file
 3. The route file maps the request through whichever controller method is called
-4. The controller then uses the model to access data from the database, and
-   sends that data back in the response
+4. The controller then uses the model to access the requested data from the
+   database, and sends that data back in the response
 
 ## Resources
 
