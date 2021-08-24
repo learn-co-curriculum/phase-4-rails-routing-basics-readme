@@ -11,9 +11,9 @@
 
 Fork and clone this repo, then run:
 
-```sh
-bundle install
-rails db:migrate db:seed
+```console
+$ bundle install
+$ rails db:migrate db:seed
 ```
 
 This will download all the dependencies for our app and set up the database.
@@ -76,8 +76,8 @@ complaining about not having a route; it should now say:
 
 Let's fix this by creating a new controller for our cheeses. You can generate a controller using a Rails generator, just like with a model:
 
-```sh
-rails g controller Cheeses --no-test-framework
+```console
+$ rails g controller Cheeses --no-test-framework
 ```
 
 Notice the naming convention we're following: for a `Cheese` model, we need a
