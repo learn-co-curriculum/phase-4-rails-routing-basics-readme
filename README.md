@@ -95,7 +95,8 @@ class CheesesController < ApplicationController
 end
 ```
 
-The standard naming convention for controllers is the name of the controller followed by the word `Controller`.
+The standard naming convention for controllers is the name of the controller
+followed by the word `Controller`.
 
 If you refresh the browser now, you will see a new error:
 `The action 'index' could not be found for CheesesController`. This means that
@@ -167,19 +168,21 @@ end
 Visit [`http://localhost:3000/cheeses`](http://localhost:3000/cheeses) in the
 browser one more time. Now you should see the JSON data being returned!
 
-Try experimenting by adding more routes and controller actions, and see what
-other responses you can set up by changing how you are accessing data from the
-database (like using the `.order` or `.limit` methods from Active Record).
-
 ## Conclusion
 
-In summary, you should now have a firm understanding of how to implement basic routing in your application for static pages. As a review, the process is below:
+You should now have a firm understanding of how to implement basic routing in
+your application for static pages. Try experimenting by adding more routes and
+controller actions, and see what other responses you can set up by changing how
+you are accessing data from the database (like using the `.order` or `.limit`
+methods from Active Record).
 
-1. The server receives an HTTP request from the client
-2. The application processes the request through the `routes.rb` file
-3. The route file maps the request through whichever controller method is called
-4. The controller then uses the model to access the requested data from the
-   database, and sends that data back in the response
+## Check For Understanding
+
+Before you move on, make sure you can answer the following questions:
+
+1. When an HTTP request is made to a Rails app, what is the sequence of events
+   that happens to return the response?
+2. What three components make up a route in Rails?
 
 ## Resources
 
