@@ -83,7 +83,7 @@ Notice the naming convention we're following: for a `Cheese` model, we need a
 `Cheeses` controller. **Model names are always singular, and controller names
 are plural**. These conventions are important to keep in mind!
 
-This will create a blank controller file `/app/controllers/cheese_controller.rb`
+This will create a blank controller file `/app/controllers/cheeses_controller.rb`
 that we can use to map to the routing file. Since there are a number of methods
 built into the Rails controller system, you will also want the controller to
 inherit from the application controller. The new file should have code that
