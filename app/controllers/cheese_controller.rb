@@ -1,2 +1,0 @@
-class CheesesController < ApplicationController
-end
